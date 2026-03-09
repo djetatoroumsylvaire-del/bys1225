@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inscription au Collectif des Jeunes Leaders Panafricains">
+    <title>Inscription - CJLP | Collectif des Jeunes Leaders Panafricains</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+    <img src="Images/logo cjlp.jpeg" 
+         alt="Logo CJLP" 
+         class="logo-circle">
+    <div class="logo-text">
+                    <h1>CJLP</h1> 
+                    <p>Collectif des Jeunes Leaders Panafricains</p>
+                </div>
+            </a>
+            
+            <ul class="navbar-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="conferences.html">Conférences</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="inscription.html" class="active">Inscription</a></li>
+                <li><a href="adhesion.html" class="btn-adhesion">Adhérer</a></li>
+                <li><button id="logout-btn" style="display: none; background: none; border: none; color: var(--color-gray-700); cursor: pointer; font-weight: 500;">Se déconnecter</button></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" aria-label="Ouvrir le menu mobile">
+                <span>☰</span>
+            </button>
+            <nav class="mobile-menu" aria-hidden="true"></nav>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div style="max-width: 48rem;">
+                    <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 1.5rem; font-weight: bold;">
+                        Inscription
+                    </h1>
+                    <p style="font-size: 1.25rem; color: rgba(255, 255, 255, 0.9);">
+                        Rejoignez notre communauté en vous inscrivant.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire d'inscription -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Inscription</h2>
+                <p>Remplissez les informations ci-dessous pour vous inscrire.</p>
+            </div>
+            
+            <form action="#" method="post" style="max-width: 600px; margin: 0 auto;">
+                <div class="form-group">
+                    <label for="nom" class="form-label">Nom <span class="required">*</span></label>
+                    <input type="text" id="nom" name="nom" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="prenoms" class="form-label">Prénoms <span class="required">*</span></label>
+                    <input type="text" id="prenoms" name="prenoms" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date_naissance" class="form-label">Date de naissance <span class="required">*</span></label>
+                    <input type="date" id="date_naissance" name="date_naissance" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Adresse mail <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact" class="form-label">Contact <span class="required">*</span></label>
+                    <input type="tel" id="contact" name="contact" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mot_de_passe" class="form-label">Mot de passe <span class="required">*</span></label>
+                    <input type="password" id="mot_de_passe" name="mot_de_passe" class="form-input" required>
+                </div>
+                
+                <button type="submit" class="btn-primary" style="width: 100%;">S'inscrire</button>
+                
+                <details style="margin-top: 2rem;">
+                    <summary style="cursor: pointer; font-weight: 600; color: #00A651; text-align: center; padding: 0.5rem; border: 1px solid #00A651; border-radius: 0.5rem; background: transparent;">Se connecter</summary>
+                    
+                    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+                        <div class="form-group">
+                            <label for="login_email" class="form-label">Adresse mail</label>
+                            <input type="email" id="login_email" name="login_email" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="login_password" class="form-label">Mot de passe</label>
+                            <input type="password" id="login_password" name="login_password" class="form-input">
+                        </div>
+                        
+                        <button type="submit" name="action" value="login" class="btn-primary" style="width: 100%; margin-bottom: 0.5rem;">Connexion</button>
+                        
+                        <details>
+                            <summary style="cursor: pointer; font-weight: 600; color: #00A651; text-align: center; padding: 0.5rem; border: 1px solid #00A651; border-radius: 0.5rem; background: transparent; margin-top: 0.5rem;">Mot de passe oublié</summary>
+                            
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+                                <div class="form-group">
+                                    <label for="reset_email" class="form-label">Adresse mail</label>
+                                    <input type="email" id="reset_email" name="reset_email" class="form-input" placeholder="Entrez votre adresse mail">
+                                </div>
+                                
+                                <button type="submit" name="action" value="reset" class="btn-primary" style="width: 100%;">Valider</button>
+                                <p style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">Un code de récupération sera envoyé sur votre adresse mail.</p>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                        <div style="width: 2.5rem; height: 2.5rem; background: #00A651; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: white;">
+                                <img src="Images/logo cjlp.jpeg" 
+         alt="Logo CJLP" 
+         class="logo-circle">
+                            </span>
+                        </div>
+                        <span style="font-weight: bold; font-size: 1.125rem;">CJLP</span>
+                    </div>
+                    <p>Un mouvement panafricain qui rassemble des jeunes issus de plusieurs pays africains pour éveiller la conscience citoyenne.</p>
+                </div>
+                
+                <div>
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="activites.html">Activités</a></li>
+                        <li><a href="conferences.html">Conférences</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><img src="Images/mail.png" style="color: #f9fafb;"
+         alt="Logo CJLP" 
+         class="logo-circle"></span> cjlpensemble74@gmail.com
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><img src="Images/whatsapp.jpeg" 
+         alt="Logo CJLP" 
+         class="logo-circle"></span> +235 62 79 05 26
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><img src="Images/localisation.png" 
+         alt="Logo CJLP" 
+         class="logo-circle"></span> Moundou, Tchad
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61570866391254" 
+        target="_blank" 
+        class="social-link facebook" 
+        aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a href="https://www.youtube.com/" 
+        target="_blank" 
+        class="social-link youtube" 
+        aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+      </a>
+
+      <a href="https://wa.me/23562790526" 
+        target="_blank" 
+        class="social-link whatsapp" 
+        aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/TON-PROFIL" 
+        target="_blank" 
+        class="social-link linkedin" 
+        aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+      </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Collectif des Jeunes Leaders Panafricains. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

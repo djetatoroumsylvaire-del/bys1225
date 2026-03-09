@@ -1,0 +1,374 @@
+  <!DOCTYPE html>
+  <html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Collectif des Jeunes Leaders Panafricains - Un mouvement qui éveille la conscience citoyenne des jeunes africains">
+      <title>Accueil - CJLP | Collectif des Jeunes Leaders Panafricains</title>
+      <link rel="stylesheet" href="Style.css">
+      <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo">
+        <img src="Images/logo cjlp.jpeg" 
+            alt="Logo CJLP" 
+            class="logo-circle">
+        <div class="logo-text">
+                        <h1>CJLP</h1> 
+                        <p>Collectif des Jeunes Leaders Panafricains</p>
+                    </div>
+                </a>               
+                <button class="mobile-menu-btn" aria-label="Ouvrir le menu mobile">
+                    <span>☰</span>
+                </button>
+                <nav class="mobile-menu" aria-hidden="true"></nav>
+
+                <ul class="navbar-menu">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="activites.html">Activités</a></li>
+                    <li><a href="conferences.html">Conférences</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="adhesion.html" class="btn-adhesion">Adhérer</a></li>
+                    <li><button id="logout-btn" style="display: none; background: none; border: none; color: var(--color-gray-700); cursor: pointer; font-weight: 500;">Se déconnecter</button></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="container">
+                    <div class="hero-grid">
+                        <div>
+                            <div class="hero-badge">
+                                ✨ Ensemble pour une Afrique meilleure
+                            </div>
+                            <h1>Collectif des Jeunes Leaders Panafricains</h1>
+                            <p>Un mouvement qui éveille la conscience citoyenne des jeunes africains sur la gestion de la chose publique</p>
+                            <div class="hero-buttons">
+                                <a href="adhesion.html" class="btn-primary">
+                                    Rejoindre le mouvement →
+                                </a>
+                                <a href="a-propos.html" class="btn-secondary">
+                                    En savoir plus
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="hero-image">
+                                <img src="Images/1770629686182.jpg" alt="Jeunes leaders africains en réunion">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulaire d'inscription -->
+        <section class="section bg-white" id="inscription-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Inscription</h2>
+                    <p>Remplissez les informations ci-dessous pour vous inscrire.</p>
+                </div>
+                
+                <form action="#" method="post" style="max-width: 600px; margin: 0 auto;">
+                    <div class="form-group">
+                        <label for="nom" class="form-label">Nom <span class="required">*</span></label>
+                        <input type="text" id="nom" name="nom" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="prenoms" class="form-label">Prénoms <span class="required">*</span></label>
+                        <input type="text" id="prenoms" name="prenoms" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date_naissance" class="form-label">Date de naissance <span class="required">*</span></label>
+                        <input type="date" id="date_naissance" name="date_naissance" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Adresse mail <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact" class="form-label">Contact <span class="required">*</span></label>
+                        <input type="tel" id="contact" name="contact" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mot_de_passe" class="form-label">Mot de passe <span class="required">*</span></label>
+                        <input type="password" id="mot_de_passe" name="mot_de_passe" class="form-input" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" style="width: 100%;">S'inscrire</button>
+                    
+                    <details style="margin-top: 2rem;">
+                        <summary style="cursor: pointer; font-weight: 600; color: #00A651; text-align: center; padding: 0.5rem; border: 1px solid #00A651; border-radius: 0.5rem; background: transparent;">Se connecter</summary>
+                        
+                        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+                            <div class="form-group">
+                                <label for="login_email" class="form-label">Adresse mail</label>
+                                <input type="email" id="login_email" name="login_email" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="login_password" class="form-label">Mot de passe</label>
+                                <input type="password" id="login_password" name="login_password" class="form-input">
+                            </div>
+                            
+                            <button type="submit" name="action" value="login" class="btn-primary" style="width: 100%; margin-bottom: 0.5rem;">Connexion</button>
+                            
+                            <details>
+                                <summary style="cursor: pointer; font-weight: 600; color: #00A651; text-align: center; padding: 0.5rem; border: 1px solid #00A651; border-radius: 0.5rem; background: transparent; margin-top: 0.5rem;">Mot de passe oublié</summary>
+                                
+                                <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+                                    <div class="form-group">
+                                        <label for="reset_email" class="form-label">Adresse mail</label>
+                                        <input type="email" id="reset_email" name="reset_email" class="form-input" placeholder="Entrez votre adresse mail">
+                                    </div>
+                                    
+                                    <button type="submit" name="action" value="reset" class="btn-primary" style="width: 100%;">Valider</button>
+                                    <p style="font-size: 0.875rem; color: #6b7280; margin-top: 0.5rem;">Un code de récupération sera envoyé sur votre adresse mail.</p>
+                                </div>
+                            </details>
+                        </div>
+                    </details>
+                </form>
+            </div>
+        </section>
+
+        <div id="main-content" style="display: none;">
+        <section class="section bg-white">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nos valeurs fondamentales</h2>
+                    <p>Un engagement collectif pour transformer l'Afrique à travers le leadership responsable</p>
+                </div>
+                
+                <div class="grid grid-4">
+                    <div class="card">
+                        <div class="card-icon" style="background: rgba(0, 166, 81, 0.1);">
+                            <span style="color: #00A651; font-size: 1.75rem;">👥</span>
+                        </div>
+                        <h3>Engagement citoyen</h3>
+                        <p>Mobiliser les jeunes africains autour des questions de gouvernance et de développement.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon" style="background: rgba(230, 45, 47, 0.1);">
+                            <span style="color: #E62D2F; font-size: 1.75rem;">💬</span>
+                        </div>
+                        <h3>Débats constructifs</h3>
+                        <p>Organiser des conférences-débats en ligne pour échanger sur la gestion de la chose publique et divers sujets socio-économiques et socio-politiques.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon" style="background: rgba(0, 166, 81, 0.1);">
+                            <span style="color: #00A651; font-size: 1.75rem;">📚</span>
+                        </div>
+                        <h3>Formation continue</h3>
+                        <p>Accompagner et former les jeunes leaders avec des professionnels expérimentés.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-icon" style="background: rgba(230, 45, 47, 0.1);">
+                            <span style="color: #E62D2F; font-size: 1.75rem;">🏆</span>
+                        </div>
+                        <h3>Excellence panafricaine</h3>
+                        <p>Promouvoir l'excellence et le leadership responsable à travers l'Afrique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Conférences -->
+        <section class="section bg-gray-50">
+            <div class="container">
+                <div class="hero-grid">
+                    <div>
+                        <div class="hero-image">
+                            <img src="Images/Syl.jpg" alt="Conférence débat" style="border-radius: 1rem;">
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: inline-block; padding: 0.5rem 1rem; background: rgba(0, 166, 81, 0.1); color: #00A651; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; margin-bottom: 1.5rem;">
+                            Nos activités phares
+                        </div>
+                        <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1.5rem;">Conférences-débats en ligne</h2>
+                        <p style="font-size: 1.125rem; color: #4b5563; margin-bottom: 1.5rem;">
+                            Nous organisons régulièrement des conférences-débats en ligne sur des thématiques cruciales : 
+                            gouvernance, transparence, développement durable, et engagement citoyen.
+                        </p>
+                        <ul style="list-style: none; margin-bottom: 1.5rem;">
+                            <li style="display: flex; align-items: start; gap: 0.75rem; margin-bottom: 0.75rem;">
+                                <span style="display: inline-block; width: 1.5rem; height: 1.5rem; background: #00A651; border-radius: 50%; color: white; text-align: center; flex-shrink: 0;">✓</span>
+                                <span>Sessions interactives avec des experts reconnus</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.75rem; margin-bottom: 0.75rem;">
+                                <span style="display: inline-block; width: 1.5rem; height: 1.5rem; background: #00A651; border-radius: 50%; color: white; text-align: center; flex-shrink: 0;">✓</span>
+                                <span>Échanges directs entre jeunes leaders et professionnels</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.75rem;">
+                                <span style="display: inline-block; width: 1.5rem; height: 1.5rem; background: #00A651; border-radius: 50%; color: white; text-align: center; flex-shrink: 0;">✓</span>
+                                <span>Replays disponibles pour tous les membres</span>
+                            </li>
+                        </ul>
+                        <a href="conferences.html" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #00A651; font-weight: 600; text-decoration: none;">
+                            Découvrir nos conférences →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Mentorship -->
+        <section class="section bg-white">
+            <div class="container">
+                <div class="hero-grid">
+                    <div>
+                        <div style="display: inline-block; padding: 0.5rem 1rem; background: rgba(230, 45, 47, 0.1); color: #E62D2F; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; margin-bottom: 1.5rem;">
+                            Encadrement professionnel
+                        </div>
+                        <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1.5rem;">Accompagnement par des aînés expérimentés</h2>
+                        <p style="font-size: 1.125rem; color: #4b5563; margin-bottom: 1.5rem;">
+                            Bénéficiez de l'expertise de professionnels issus de différents domaines pour vous accompagner 
+                            dans votre développement personnel et professionnel.
+                        </p>
+                        <div style="background: #f9fafb; border-left: 4px solid #E62D2F; padding: 1.5rem; border-radius: 0 0.5rem 0.5rem 0; margin-bottom: 1.5rem;">
+                            <p style="color: #374151; font-style: italic;">
+                                "Le mentorship est au cœur de notre mission. Nous croyons au transfert de connaissances 
+                                et à l'apprentissage intergénérationnel pour bâtir une Afrique forte."
+                            </p>
+                        </div>
+                        <a href="adhesion.html" class="btn-primary">
+                            Rejoindre le programme →
+                        </a>
+                    </div>
+                    <div>
+                        <div class="hero-image">
+                            <img src="https://images.unsplash.com/photo-1761666520005-3ffcf13e74c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwY29tbXVuaXR5JTIwZ2F0aGVyaW5nfGVufDF8fHx8MTc2OTUwODY5Nnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Rassemblement communautaire" style="border-radius: 1rem;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <!-- Call to Action Final -->
+      <section class="section" style="background: linear-gradient(to right, #00A651, #008844); color: white;">
+          <div class="container">
+              <div style="max-width: 56rem; margin: 0 auto; text-align: center;">
+                  <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1.5rem;">
+                      Prêt à faire partie du changement ?
+                  </h2>
+                  <p style="font-size: 1.25rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 2rem; max-width: 42rem; margin-left: auto; margin-right: auto;">
+                      Rejoignez une communauté de jeunes leaders engagés pour transformer l'Afrique
+                  </p>
+                  <div class="hero-buttons" style="justify-content: center;">
+                      <a href="adhesion.html" class="btn-secondary">
+                          Devenir membre →
+                      </a>
+                      <a href="contact.html" style="background: transparent; border: 2px solid white; color: white; padding: 1rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; transition: all 0.3s;">
+                          Nous contacter
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                        <div style="width: 2.5rem; height: 2.5rem; background: #00A651; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: white;">
+                                <img src="Images/logo cjlp.jpeg" 
+         alt="Logo CJLP" 
+         class="logo-circle">
+                            </span>
+                        </div>
+                        <span style="font-weight: bold; font-size: 1.125rem;">CJLP</span>
+                    </div>
+                    <p>Un mouvement panafricain qui rassemble des jeunes issus de plusieurs pays africains pour éveiller la conscience citoyenne.</p>
+                </div>
+                
+                <div>
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="activites.html">Activités</a></li>
+                        <li><a href="conferences.html">Conférences</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><i class="fas fa-envelope"></i></span> cjlpensemble74@gmail.com
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><i class="fab fa-whatsapp"></i></span> +235 62 79 05 26
+                        </liCr>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><i class="fas fa-map-marker-alt"></i></span> Moundou, Tchad
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61570866391254" 
+        target="_blank" 
+        class="social-link facebook" 
+        aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a href="https://www.youtube.com/" 
+        target="_blank" 
+        class="social-link youtube" 
+        aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+      </a>
+
+      <a href="https://wa.me/23562790526" 
+        target="_blank" 
+        class="social-link whatsapp" 
+        aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/TON-PROFIL" 
+        target="_blank" 
+        class="social-link linkedin" 
+        aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+      </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Collectif des Jeunes Leaders Panafricains. Tous droits réservés.</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+  </body>
+  </html>

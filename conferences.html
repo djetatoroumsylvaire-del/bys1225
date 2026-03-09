@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conférences du Collectif des Jeunes Leaders Panafricains">
+    <title>Conférences - CJLP | Collectif des Jeunes Leaders Panafricains</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+    <img src="Images/logo cjlp.jpeg" 
+         alt="Logo CJLP" 
+         class="logo-circle">
+    <div class="logo-text">
+                    <h1>CJLP</h1> 
+                    <p>Collectif des Jeunes Leaders Panafricains</p>
+                </div>
+            </a>
+            
+            <ul class="navbar-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="conferences.html" class="active">Conférences</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="adhesion.html" class="btn-adhesion">Adhérer</a></li>
+                <li><button id="logout-btn" style="display: none; background: none; border: none; color: var(--color-gray-700); cursor: pointer; font-weight: 500;">Se déconnecter</button></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" aria-label="Ouvrir le menu mobile">
+                <span>☰</span>
+            </button>
+            <nav class="mobile-menu" aria-hidden="true"></nav>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div style="max-width: 48rem;">
+                    <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 1.5rem; font-weight: bold;">
+                        Conférences
+                    </h1>
+                    <p style="font-size: 1.25rem; color: rgba(255, 255, 255, 0.9);">
+                        Découvrez nos conférences-débats en ligne sur des thématiques cruciales pour l'Afrique.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Conférences -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos conférences enregistrées</h2>
+                <p>Accédez aux replays de nos sessions interactives avec des experts.</p>
+            </div>
+            
+            <div id="conferences-container" class="grid grid-3">
+                <!-- Les conférences seront affichées ici -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Gouvernance et transparence en Afrique</h3>
+                    <p>Débat avec des experts sur les défis de la bonne gouvernance dans les pays africains.</p>
+                    <div style="margin-top: 1rem;">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 0.5rem;"></iframe>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <small style="color: #6b7280;">Date: 15 Mars 2026</small>
+                        <br>
+                        <a href="#" style="color: #00A651; text-decoration: none; font-weight: 500;">Voir sur YouTube →</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Développement durable et jeunesse africaine</h3>
+                    <p>Discussion sur le rôle des jeunes dans la transition vers un développement durable.</p>
+                    <div style="margin-top: 1rem;">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 0.5rem;"></iframe>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <small style="color: #6b7280;">Date: 22 Mars 2026</small>
+                        <br>
+                        <a href="#" style="color: #00A651; text-decoration: none; font-weight: 500;">Voir sur YouTube →</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Engagement citoyen et démocratie</h3>
+                    <p>Comment les jeunes peuvent s'engager pour renforcer la démocratie en Afrique.</p>
+                    <div style="margin-top: 1rem;">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="border-radius: 0.5rem;"></iframe>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <small style="color: #6b7280;">Date: 29 Mars 2026</small>
+                        <br>
+                        <a href="#" style="color: #00A651; text-decoration: none; font-weight: 500;">Voir sur YouTube →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                        <div style="width: 2.5rem; height: 2.5rem; background: #00A651; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: white;">
+                                <img src="Images/logo cjlp.jpeg" 
+         alt="Logo CJLP" 
+         class="logo-circle">
+                            </span>
+                        </div>
+                        <span style="font-weight: bold; font-size: 1.125rem;">CJLP</span>
+                    </div>
+                    <p>Un mouvement panafricain qui rassemble des jeunes issus de plusieurs pays africains pour éveiller la conscience citoyenne.</p>
+                </div>
+                
+                <div>
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="activites.html">Activités</a></li>
+                        <li><a href="conferences.html">Conférences</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><i class="fas fa-envelope"></i></span> cjlpensemble74@gmail.com
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><i class="fas fa-phone"></i></span> +235 62 79 05 26
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><i class="fas fa-map-marker-alt"></i></span> Moundou, Tchad
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61570866391254" 
+        target="_blank" 
+        class="social-link facebook" 
+        aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a href="https://www.youtube.com/" 
+        target="_blank" 
+        class="social-link youtube" 
+        aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+      </a>
+
+      <a href="https://wa.me/23562790526" 
+        target="_blank" 
+        class="social-link whatsapp" 
+        aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/TON-PROFIL" 
+        target="_blank" 
+        class="social-link linkedin" 
+        aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+      </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Collectif des Jeunes Leaders Panafricains. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rejoignez le Collectif des Jeunes Leaders Panafricains">
+    <title>Adhésion - CJLP | Collectif des Jeunes Leaders Panafricains</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+    <img src="Images/logo cjlp.jpeg" 
+         alt="Logo CJLP" 
+         class="logo-circle">
+    <div class="logo-text">
+                    <h1>CJLP</h1>
+                    <p>Jeunes Leaders Panafricains</p>
+                </div>
+            </a>
+            
+            <ul class="navbar-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="conferences.html">Conférences</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="adhesion.html" class="btn-adhesion active">Adhérer</a></li>
+                <li><button id="logout-btn" style="display: none; background: none; border: none; color: var(--color-gray-700); cursor: pointer; font-weight: 500;">Se déconnecter</button></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" aria-label="Ouvrir le menu mobile">
+                <span>☰</span>
+            </button>
+            <nav class="mobile-menu" aria-hidden="true"></nav>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(to right, #E62D2F, #c92527);">
+        <div class="hero-content">
+            <div class="container">
+                <div style="max-width: 48rem;">
+                    <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 1.5rem; font-weight: bold;">
+                        Rejoignez le mouvement
+                    </h1>
+                    <p style="font-size: 1.25rem; color: rgba(255, 255, 255, 0.9);">
+                        Devenez acteur du changement et contribuez à transformer l'Afrique avec des milliers de jeunes leaders engagés
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantages de l'adhésion -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pourquoi nous rejoindre ?</h2>
+                <p>Les avantages d'être membre du CJLP</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="text-center" style="background: linear-gradient(to bottom right, #f9fafb, white); border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 2rem; transition: box-shadow 0.3s;">
+                    <div style="width: 4rem; height: 4rem; background: #00A651; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                        <span style="color: white; font-size: 2rem;">👥</span>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem;">Réseau panafricain</h3>
+                    <p style="color: #4b5563;">Rejoignez un réseau de plus de 500 jeunes leaders à travers l'Afrique</p>
+                </div>
+                
+                <div class="text-center" style="background: linear-gradient(to bottom right, #f9fafb, white); border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 2rem; transition: box-shadow 0.3s;">
+                    <div style="width: 4rem; height: 4rem; background: #00A651; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                        <span style="color: white; font-size: 2rem;">📚</span>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem;">Formation continue</h3>
+                    <p style="color: #4b5563;">Accès gratuit à toutes nos conférences, ateliers et formations</p>
+                </div>
+                
+                <div class="text-center" style="background: linear-gradient(to bottom right, #f9fafb, white); border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 2rem; transition: box-shadow 0.3s;">
+                    <div style="width: 4rem; height: 4rem; background: #00A651; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                        <span style="color: white; font-size: 2rem;">🏆</span>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem;">Mentorship personnalisé</h3>
+                    <p style="color: #4b5563;">Bénéficiez de l'accompagnement de professionnels expérimentés</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processus d'adhésion -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comment adhérer ?</h2>
+                <p>Un processus simple et rapide en 3 étapes</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="text-center" style="position: relative;">
+                    <div style="width: 5rem; height: 5rem; background: #00A651; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">
+                        01
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Remplissez le formulaire</h3>
+                    <p style="color: #4b5563;">Complétez votre candidature avec vos informations et motivations</p>
+                </div>
+                
+                <div class="text-center">
+                    <div style="width: 5rem; height: 5rem; background: #00A651; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">
+                        02
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Examen de la candidature</h3>
+                    <p style="color: #4b5563;">Notre équipe étudie votre profil sous 48h</p>
+                </div>
+                
+                <div class="text-center">
+                    <div style="width: 5rem; height: 5rem; background: #00A651; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">
+                        03
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Bienvenue dans le collectif</h3>
+                    <p style="color: #4b5563;">Recevez votre confirmation et accédez à toutes nos ressources</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire d'adhésion -->
+    <section class="section bg-white">
+        <div class="container" style="max-width: 56rem;">
+            <div class="text-center mb-8">
+                <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">
+                    Formulaire d'adhésion
+                </h2>
+                <p style="font-size: 1.25rem; color: #4b5563;">
+                    Complétez le formulaire ci-dessous pour soumettre votre candidature
+                </p>
+            </div>
+
+            <form onsubmit="return handleAdhesionSubmit(event)">
+                <!-- Informations personnelles -->
+                <div style="background: #f9fafb; border-radius: 0.75rem; padding: 2rem; margin-bottom: 2rem;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1.5rem;">
+                        Informations personnelles
+                    </h3>
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label for="firstName" class="form-label">
+                                Prénom <span class="required">*</span>
+                            </label>
+                            <input type="text" id="firstName" name="firstName" required class="form-input" placeholder="Votre prénom">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="form-label">
+                                Nom <span class="required">*</span>
+                            </label>
+                            <input type="text" id="lastName" name="lastName" required class="form-input" placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                Email <span class="required">*</span>
+                            </label>
+                            <input type="email" id="email" name="email" required class="form-input" placeholder="votre.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">
+                                Téléphone <span class="required">*</span>
+                            </label>
+                            <input type="tel" id="phone" name="phone" required class="form-input" placeholder="+235 XX XX XX XX XX">
+                        </div>
+                        <div class="form-group">
+                            <label for="country" class="form-label">
+                                Pays <span class="required">*</span>
+                            </label>
+                            <input type="text" id="country" name="country" required class="form-input" placeholder="Votre pays" list="african-countries" type="text">
+<datalist id="african-countries">
+    <option value="Afrique du Sud">
+    <option value="Algérie">
+    <option value="Angola">
+    <option value="Bénin">
+    <option value="Botswana">
+    <option value="Burkina Faso">
+    <option value="Burundi">
+    <option value="Cabo Verde">
+    <option value="Cameroun">
+    <option value="République centrafricaine">
+    <option value="Comores">
+    <option value="Congo">
+    <option value="République démocratique du Congo">
+    <option value="Côte d’Ivoire">
+    <option value="Djibouti">
+    <option value="Égypte">
+    <option value="Érythrée">
+    <option value="Eswatini">
+    <option value="Éthiopie">
+    <option value="Gabon">
+    <option value="Gambie">
+    <option value="Ghana">
+    <option value="Guinée">
+    <option value="Guinée-Bissau">
+    <option value="Guinée équatoriale">
+    <option value="Kenya">
+    <option value="Lesotho">
+    <option value="Liberia">
+    <option value="Libye">
+    <option value="Madagascar">
+    <option value="Malawi">
+    <option value="Mali">
+    <option value="Maroc">
+    <option value="Maurice">
+    <option value="Mauritanie">
+    <option value="Mozambique">
+    <option value="Namibie">
+    <option value="Niger">
+    <option value="Nigeria">
+    <option value="Ouganda">
+    <option value="Rwanda">
+    <option value="Sao Tomé-et-Principe">
+    <option value="Sénégal">
+    <option value="Seychelles">
+    <option value="Sierra Leone">
+    <option value="Somalie">
+    <option value="Soudan">
+    <option value="Soudan du Sud">
+    <option value="Tanzanie">
+    <option value="Tchad">
+    <option value="Togo">
+    <option value="Tunisie">
+    <option value="Zambie">
+    <option value="Zimbabwe">
+</datalist>
+                        </div>
+                        <div class="form-group">
+                            <label for="city" class="form-label">
+                                Ville <span class="required">*</span>
+                            </label>
+                            <input type="text" id="city" name="city" required class="form-input" placeholder="Votre ville">
+                        </div>
+                        <div class="form-group">
+                            <label for="age" class="form-label">
+                                Âge <span class="required">*</span>
+                            </label>
+                            <input type="number" id="age" name="age" required min="18" max="40" class="form-input" placeholder="Votre âge">
+                        </div>
+                        <div class="form-group">
+                            <label for="profession" class="form-label">
+                                Profession <span class="required">*</span>
+                            </label>
+                            <input type="text" id="profession" name="profession" required class="form-input" placeholder="Votre profession">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motivation et engagement -->
+                <div style="background: #f9fafb; border-radius: 0.75rem; padding: 2rem; margin-bottom: 2rem;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1.5rem;">
+                        Motivation et engagement
+                    </h3>
+                    <div class="form-group">
+                        <label for="motivation" class="form-label">
+                            Pourquoi souhaitez-vous rejoindre le CJLP ? <span class="required">*</span>
+                        </label>
+                        <textarea id="motivation" name="motivation" required rows="5" class="form-textarea" placeholder="Expliquez vos motivations..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills" class="form-label">
+                            Quelles compétences pouvez-vous apporter au collectif ? <span class="required">*</span>
+                        </label>
+                        <textarea id="skills" name="skills" required rows="4" class="form-textarea" placeholder="Décrivez vos compétences et expériences..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="availability" class="form-label">
+                            Disponibilité <span class="required">*</span>
+                        </label>
+                        <select id="availability" name="availability" required class="form-select">
+                            <option value="">Sélectionnez votre disponibilité</option>
+                            <option value="full">Très disponible (plus de 10h/mois)</option>
+                            <option value="medium">Disponible (5-10h/mois)</option>
+                            <option value="limited">Disponibilité limitée (moins de 5h/mois)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Conditions -->
+                <div style="background: rgba(0, 166, 81, 0.05); border: 2px solid rgba(0, 166, 81, 0.2); border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem;">
+                    <label style="display: flex; align-items: start; gap: 0.75rem; cursor: pointer;">
+                        <input type="checkbox" name="terms" required style="margin-top: 0.25rem; width: 1.25rem; height: 1.25rem;">
+                        <span style="font-size: 0.875rem; color: #374151;">
+                            J'accepte les <a href="#" style="color: #00A651; font-weight: 600; text-decoration: underline;">conditions d'adhésion</a> du Collectif des Jeunes Leaders Panafricains et m'engage à respecter les valeurs et la mission de l'organisation.
+                        </span>
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" class="btn-primary" style="padding: 1rem 3rem; font-size: 1.125rem;">
+                        ✓ Soumettre ma candidature →
+                    </button>
+                    <p style="font-size: 0.875rem; color: #4b5563; margin-top: 1rem;">
+                        Votre candidature sera examinée sous 48h
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                        <div style="width: 2.5rem; height: 2.5rem; background: #00A651; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: white;">
+                                <img src="Images/logo cjlp.jpeg" 
+         alt="Logo CJLP" 
+         class="logo-circle">
+                            </span>
+                        </div>
+                        <span style="font-weight: bold; font-size: 1.125rem;">CJLP</span>
+                    </div>
+                    <p>Un mouvement panafricain qui rassemble des jeunes issus de plusieurs pays africains pour éveiller la conscience citoyenne.</p>
+                </div>
+                
+                <div>
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="activites.html">Activités</a></li>
+                        <li><a href="conferences.html">Conférences</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><i class="fas fa-envelope"></i></span> cjlpensemble74@gmail.com
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><i class="fas fa-phone"></i></span> +235 62 79 05 26
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><i class="fas fa-map-marker-alt"></i></span> Moundou, Tchad
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61570866391254" 
+        target="_blank" 
+        class="social-link facebook" 
+        aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a href="https://www.youtube.com/" 
+        target="_blank" 
+        class="social-link youtube" 
+        aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+      </a>
+
+      <a href="https://wa.me/23562790526" 
+        target="_blank" 
+        class="social-link whatsapp" 
+        aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/TON-PROFIL" 
+        target="_blank" 
+        class="social-link linkedin" 
+        aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+      </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Collectif des Jeunes Leaders Panafricains. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

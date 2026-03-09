@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Activités du Collectif des Jeunes Leaders Panafricains">
+    <title>Activités - CJLP | Collectif des Jeunes Leaders Panafricains</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+    <img src="Images/logo cjlp.jpeg" 
+         alt="Logo CJLP" 
+         class="logo-circle">
+    <div class="logo-text">
+                    <h1>CJLP</h1> 
+                    <p>Collectif des Jeunes Leaders Panafricains</p>
+                </div>
+            </a>
+            
+            <ul class="navbar-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="activites.html" class="active">Activités</a></li>
+                <li><a href="conferences.html">Conférences</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="adhesion.html" class="btn-adhesion">Adhérer</a></li>
+                <li><button id="logout-btn" style="display: none; background: none; border: none; color: var(--color-gray-700); cursor: pointer; font-weight: 500;">Se déconnecter</button></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" aria-label="Ouvrir le menu mobile">
+                <span>☰</span>
+            </button>
+            <nav class="mobile-menu" aria-hidden="true"></nav>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div style="max-width: 48rem;">
+                    <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 1.5rem; font-weight: bold;">
+                        Nos Activités
+                    </h1>
+                    <p style="font-size: 1.25rem; color: rgba(255, 255, 255, 0.9);">
+                        Découvrez l'ensemble de nos initiatives pour former et mobiliser les jeunes leaders africains.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Activités Principales -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos activités phares</h2>
+                <p>Un programme complet pour développer les compétences et l'engagement des jeunes africains.</p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Conférences-débats en ligne</h3>
+                    <p>Nous organisons régulièrement des sessions interactives sur des thématiques cruciales : gouvernance, transparence, développement durable, engagement citoyen. Ces conférences réunissent experts, professionnels et jeunes leaders pour des échanges constructifs.</p>
+                    <ul style="margin-top: 1rem; color: #4b5563;">
+                        <li>• Sessions mensuelles thématiques</li>
+                        <li>• Invités experts et professionnels</li>
+                        <li>• Replays disponibles pour tous</li>
+                        <li>• Questions-réponses interactives</li>
+                    </ul>
+                    <a href="conferences.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Voir les conférences →</a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Programme de mentorat</h3>
+                    <p>Notre programme d'accompagnement par des aînés expérimentés permet aux jeunes leaders de bénéficier de l'expertise de professionnels issus de divers domaines. Un transfert de connaissances essentiel pour le développement personnel et professionnel.</p>
+                    <ul style="margin-top: 1rem; color: #4b5563;">
+                        <li>• Mentorat individuel personnalisé</li>
+                        <li>• Sessions de groupe thématiques</li>
+                        <li>• Accompagnement carrière</li>
+                        <li>• Développement des compétences</li>
+                    </ul>
+                    <a href="adhesion.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Rejoindre le programme →</a>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Ateliers de formation</h3>
+                    <p>Des ateliers pratiques pour développer les compétences essentielles du leadership : communication, gestion de projet, analyse politique, entrepreneuriat social. Ces formations sont dispensées par des experts reconnus.</p>
+                    <ul style="margin-top: 1rem; color: #4b5563;">
+                        <li>• Leadership et communication</li>
+                        <li>• Gestion de projet</li>
+                        <li>• Analyse socio-politique</li>
+                        <li>• Entrepreneuriat social</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Réseautage et échanges</h3>
+                    <p>Créer des opportunités de rencontre et d'échange entre jeunes leaders africains. Des événements de networking, des groupes de discussion et des projets collaboratifs pour renforcer les liens panafricains.</p>
+                    <ul style="margin-top: 1rem; color: #4b5563;">
+                        <li>• Événements de networking</li>
+                        <li>• Groupes de discussion régionaux</li>
+                        <li>• Projets collaboratifs</li>
+                        <li>• Partenariats inter-pays</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Calendrier -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="section-header">
+                <h2>Calendrier des activités</h2>
+                <p>Restez informés de nos prochaines initiatives.</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div style="background: white; border-radius: 0.75rem; padding: 1.5rem; border: 1px solid #e5e7eb;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 3rem; height: 3rem; background: #00A651; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                            15
+                        </div>
+                        <div>
+                            <h3 style="font-weight: 600; margin-bottom: 0.25rem;">Conférence : Gouvernance locale</h3>
+                            <p style="color: #6b7280; font-size: 0.875rem;">Mars 2026</p>
+                        </div>
+                    </div>
+                    <p style="color: #4b5563;">Discussion sur les défis de la gouvernance au niveau local avec des maires et experts.</p>
+                </div>
+                
+                <div style="background: white; border-radius: 0.75rem; padding: 1.5rem; border: 1px solid #e5e7eb;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 3rem; height: 3rem; background: #E62D2F; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                            22
+                        </div>
+                        <div>
+                            <h3 style="font-weight: 600; margin-bottom: 0.25rem;">Atelier : Communication efficace</h3>
+                            <p style="color: #6b7280; font-size: 0.875rem;">Mars 2026</p>
+                        </div>
+                    </div>
+                    <p style="color: #4b5563;">Formation pratique sur les techniques de communication pour leaders.</p>
+                </div>
+                
+                <div style="background: white; border-radius: 0.75rem; padding: 1.5rem; border: 1px solid #e5e7eb;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 3rem; height: 3rem; background: #00A651; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                            05
+                        </div>
+                        <div>
+                            <h3 style="font-weight: 600; margin-bottom: 0.25rem;">Session mentorat</h3>
+                            <p style="color: #6b7280; font-size: 0.875rem;">Avril 2026</p>
+                        </div>
+                    </div>
+                    <p style="color: #4b5563;">Rencontre mensuelle avec les mentors pour un accompagnement personnalisé.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Impact -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre impact</h2>
+                <p>Les résultats concrets de nos activités depuis le lancement du CJLP.</p>
+            </div>
+            
+            <div class="grid grid-4">
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: bold; color: #00A651; margin-bottom: 0.5rem;">500+</div>
+                    <p style="color: #4b5563;">Jeunes leaders formés</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: bold; color: #00A651; margin-bottom: 0.5rem;">25+</div>
+                    <p style="color: #4b5563;">Conférences organisées</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: bold; color: #00A651; margin-bottom: 0.5rem;">15</div>
+                    <p style="color: #4b5563;">Pays africains représentés</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: bold; color: #00A651; margin-bottom: 0.5rem;">50+</div>
+                    <p style="color: #4b5563;">Mentors actifs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                        <div style="width: 2.5rem; height: 2.5rem; background: #00A651; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: white;">
+                                <img src="Images/logo cjlp.jpeg" 
+         alt="Logo CJLP" 
+         class="logo-circle">
+                            </span>
+                        </div>
+                        <span style="font-weight: bold; font-size: 1.125rem;">CJLP</span>
+                    </div>
+                    <p>Un mouvement panafricain qui rassemble des jeunes issus de plusieurs pays africains pour éveiller la conscience citoyenne.</p>
+                </div>
+                
+                <div>
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="activites.html">Activités</a></li>
+                        <li><a href="conferences.html">Conférences</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><i class="fas fa-envelope"></i></span> cjlpensemble74@gmail.com
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><i class="fas fa-phone"></i></span> +235 62 79 05 26
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #00A651;"><i class="fas fa-map-marker-alt"></i></span> Moundou, Tchad
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61570866391254" 
+        target="_blank" 
+        class="social-link facebook" 
+        aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a href="https://www.youtube.com/" 
+        target="_blank" 
+        class="social-link youtube" 
+        aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+      </a>
+
+      <a href="https://wa.me/23562790526" 
+        target="_blank" 
+        class="social-link whatsapp" 
+        aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/TON-PROFIL" 
+        target="_blank" 
+        class="social-link linkedin" 
+        aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+      </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Collectif des Jeunes Leaders Panafricains. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
